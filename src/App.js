@@ -19,6 +19,7 @@ function App() {
           Learn React
         </a>
       </header>
+      <i className="fas fa-dice-one"></i>
     </div>
   );
 }
