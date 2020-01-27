@@ -23,11 +23,12 @@ export default class RollDice extends Component {
         }, 1000)
     }
     render() {
+        const {die1, die2, rolling} = this.state
         return (
             <div className="RollDice">
                 <div className="RollDice-container">
-                <Die face={this.state.die1} rolling={this.state.rolling}/>
-                <Die face={this.state.die2} rolling={this.state.rolling}/>
+                <Die face={die1} rolling={rolling}/>
+                <Die face={die2} rolling={rolling}/>
                 </div>
                 <button onClick={this.roll} disabled={this.state.rolling}>
                     {this.state.rolling ? 'Rolling.....' : 'Roll Dice!!'}
